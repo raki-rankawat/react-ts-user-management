@@ -1,0 +1,11 @@
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.userCard {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 10px;
+}
