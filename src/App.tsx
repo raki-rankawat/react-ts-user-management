@@ -1,9 +1,11 @@
-import Page from './user-list/Page'
+import UserForm from './user-form/UserForm'
+import UserList from './user-list/UserList'
 
 const App = () => {
   return (
     <div>
-      <Page />
+      <UserForm />
+      <UserList />
     </div>
   )
 }

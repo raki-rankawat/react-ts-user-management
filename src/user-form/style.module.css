@@ -1,0 +1,35 @@
+.title {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 15px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.formControl {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 0.3rem 0.5rem;
+}
+
+.btn {
+  display: block;
+  width: 50%;
+  margin-top: 8px;
+  padding: 7px;
+}

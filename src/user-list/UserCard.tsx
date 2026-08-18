@@ -17,7 +17,9 @@ const UserCard = ({ user, onSelect }: UserCardProps) => {
         Role: <strong>{role}</strong>
       </p>
 
-      <button onClick={() => onSelect(user)}>Select User</button>
+      <button className={styles.btn} onClick={() => onSelect(user)}>
+        Select User
+      </button>
     </div>
   )
 }

@@ -2,12 +2,32 @@ import UserCard from './UserCard'
 import type { User } from './types'
 import styles from './style.module.css'
 
-interface UserListProps {
-  users: User[]
-  onSelect: (user: User) => void
-}
+const users: User[] = [
+  {
+    id: 1,
+    name: 'Rakesh',
+    email: 'rakesh@example.com',
+    role: 'admin',
+  },
+  {
+    id: 2,
+    name: 'John',
+    email: 'john@example.com',
+    role: 'user',
+  },
+  {
+    id: 3,
+    name: 'Sarah',
+    email: 'sarah@example.com',
+    role: 'user',
+  },
+]
 
-const UserList = ({ users, onSelect }: UserListProps) => {
+const UserList = () => {
+  const handleSelect = (user: User) => {
+    console.log('Selected user is: ', user)
+  }
+
   if (!users.length) {
     return <p>No users found.</p>
   }
@@ -15,7 +35,7 @@ const UserList = ({ users, onSelect }: UserListProps) => {
   return (
     <div className={styles.users}>
       {users.map(user => (
-        <UserCard key={user.id} user={user} onSelect={onSelect} />
+        <UserCard key={user.id} user={user} onSelect={handleSelect} />
       ))}
     </div>
   )

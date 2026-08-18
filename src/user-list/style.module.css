@@ -5,7 +5,16 @@
 }
 
 .userCard {
-  border: 1px solid #ccc;
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
   margin-bottom: 10px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.btn {
+  max-width: fit-content;
+  padding: 5px 15px;
 }
