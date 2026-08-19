@@ -12,3 +12,10 @@ export interface Product {
   category: 'electronics' | 'furniture' | 'kitchen'
   inStock: boolean
 }
+
+// Auth
+export interface AuthContextValue {
+  user: User | null
+  login: (user: User) => void
+  logout: () => void
+}
