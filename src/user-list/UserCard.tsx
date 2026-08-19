@@ -1,6 +1,6 @@
 import Button from '../components/Button'
 import styles from './style.module.css'
-import type { User } from './types'
+import type { User } from '../types'
 
 interface UserCardProps {
   user: User

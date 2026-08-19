@@ -18,5 +18,28 @@
       "email": "sarah@example.com",
       "role": "user"
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "price": 89.99,
+      "category": "Electronics",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Ergonomic Office Chair",
+      "price": 149.5,
+      "category": "Furniture",
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "name": "Stainless Steel Water Bottle",
+      "price": 24.99,
+      "category": "Home & Kitchen",
+      "inStock": true
+    }
   ]
 }

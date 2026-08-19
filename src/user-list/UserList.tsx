@@ -1,6 +1,6 @@
 import UserCard from './UserCard'
 import useFetch from '../hooks/useFetch'
-import type { User } from './types'
+import type { User } from '../types'
 import styles from './style.module.css'
 
 const UserList = () => {

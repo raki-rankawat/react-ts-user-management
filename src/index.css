@@ -35,3 +35,19 @@ body {
   background-color: #dc3545;
   color: #fff;
 }
+
+/* Table */
+table {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+table th,
+td {
+  padding: 20px 5px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
