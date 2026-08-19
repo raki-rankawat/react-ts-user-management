@@ -58,6 +58,10 @@ const UserList = () => {
     console.log('Selected user is: ', user)
   }
 
+  const handleDelete = (id: number) => {
+    console.log('Deleted user id: ', id)
+  }
+
   switch (state.status) {
     case 'loading':
       return <p>Loading...</p>
@@ -67,6 +71,13 @@ const UserList = () => {
         <div>
           <h2>Something went wrong!</h2>
           <p>{state.message}</p>
+          <button
+            onClick={() => {
+              window.location.reload()
+            }}
+          >
+            Retry
+          </button>
         </div>
       )
 
@@ -74,7 +85,12 @@ const UserList = () => {
       return (
         <div className={styles.users}>
           {state.users.map(user => (
-            <UserCard key={user.id} user={user} onSelect={handleSelect} />
+            <UserCard
+              key={user.id}
+              user={user}
+              onSelect={handleSelect}
+              onDelete={handleDelete}
+            />
           ))}
         </div>
       )
